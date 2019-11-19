@@ -2,7 +2,7 @@
  <h2>This is my final project for Creative Coding I.</h2>
 
 
-Description
+<h3>Description:</h3>
 
 
 <h3>Interaction<h3>
