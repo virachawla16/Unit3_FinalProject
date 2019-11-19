@@ -2,10 +2,10 @@
  This is my final project for Creative Coding I.
 
 
-#Description
+Description
 
 
-#Interaction
+<h2>Interaction<h2>
 
 
 <h3>#Milestone #1: November 22nd, 2019</h3>
