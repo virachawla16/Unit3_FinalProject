@@ -12,7 +12,7 @@
 <ul>
  <li>Create project idea/li>
  <li>Get idea approved by John and Linus</li>
- 
+ </ul>
 
 
 <h3>#Milestone #2: December 2nd, 2019</h3>
