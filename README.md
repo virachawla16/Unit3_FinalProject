@@ -5,8 +5,8 @@
 Description
 
 
-<h2>Interaction<h2>
- <h4>What is an interesting way that a user interacts with your program?</h4>
+<h3>Interaction<h3>
+What is an interesting way that a user interacts with your program?
 
 <h3>#Milestone #1: November 22nd, 2019</h3>
 <ul>
