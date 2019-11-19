@@ -13,6 +13,10 @@
  <li>Create project idea/li>
  <li>Get idea approved by John and Linus</li>
  
-#Milestone #2: December 2nd, 2019
 
-#Milestone #3: Decemeber 13th, 2019
+
+<h3>#Milestone #2: December 2nd, 2019</h3>
+
+
+
+<h3>#Milestone #3: Decemeber 13th, 2019</h3>
