@@ -10,20 +10,20 @@ My final project is "Ready, Set, Rock!" It is a control based game. In the game,
 
 <h4>The user is able to acutally play the songs since they have a guitar with them. They get a proper experience and have the fun of the game and the competitiveness. This game will also help users learn about the different genres in music and what they sound like. They get the expreience of playing the guitar without actually playing it!</h4>
 
-<h3>#Milestone #1: November 22nd, 2019</h3>
+<h3>Milestone #1: November 22nd, 2019</h3>
 <ul>
  <li>Create project idea</li>
  <li>Get idea approved by John and Linus</li>
  </ul>
 
 
-<h3>#Milestone #2: December 2nd, 2019</h3>
+<h3>Milestone #2: December 2nd, 2019</h3>
 <ul>
  <li>Begin creation of the project</li>
  </ul>
 
 
-<h3>#Milestone #3: Decemeber 13th, 2019</h3>
+<h3>Milestone #3: Decemeber 13th, 2019</h3>
 <ul>
  <li>Check if the program works</li>
  <li>Add final changes</li>
