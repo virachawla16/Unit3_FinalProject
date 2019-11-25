@@ -8,7 +8,7 @@ My final project is "Ready, Set, Rock!" It is a control based game. In the game,
 
 <h3>Interaction:<h3>
 
-<h4>The user is able ot acutally play the songs since they have a guitar with them. They get a proper experience and have the fun of the game and the competitiveness. This game will also help users learn about the different genres in music and what they sound like. They get the expreience of playing the guitar without actually playing it!</h4>
+<h4>The user is able to acutally play the songs since they have a guitar with them. They get a proper experience and have the fun of the game and the competitiveness. This game will also help users learn about the different genres in music and what they sound like. They get the expreience of playing the guitar without actually playing it!</h4>
 
 <h3>#Milestone #1: November 22nd, 2019</h3>
 <ul>
