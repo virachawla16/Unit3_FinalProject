@@ -8,7 +8,7 @@ Circle one= new Circle();
 PFont hel;
 
 int Scene =0;
-
+int Genre =4;
 void setup()
 {
   size(800, 800);
@@ -28,7 +28,7 @@ void draw()
     background(255, 255, 255);
     // one.draw();
 
-    fill(255, 255, 255);
+    fill(197, 250, 249);
     rect(70, 350, 300, 160);
 
 
@@ -37,16 +37,47 @@ void draw()
     textFont(hel);
     text("Electric", 170, 450);
 
-    // if mousePressed()
-    //{
-    //(mouseX > 90 && mouseX < 97)
-
-    fill(255, 255, 255);
+    fill(197, 250, 215);
     rect(450, 350, 300, 160);
 
     fill(0, 0, 0);
     textSize(32);
     text("Acoustic", 540, 450);
+
+    if (mouseX > 450)
+    {
+      if (mouseX < 450 + 300)
+      {
+        if (mouseY > 350)
+        {
+          if (mouseY < 350 + 160)
+          {
+            if (mousePressed)
+            {
+              Scene = 2;
+            }
+          }
+        }
+      }
+    }
+
+
+    if (mouseX > 70)
+    {
+      if (mouseX < 70 + 300)
+      {
+        if (mouseY > 350)
+        {
+          if (mouseY < 350 + 160)
+          {
+            if (mousePressed)
+            {
+              Scene = 3;
+            }
+          }
+        }
+      }
+    }
   }
 
   if (Scene == 4)
@@ -59,39 +90,41 @@ void draw()
 
   if (Scene == 2)
   {
-    fill(255, 255, 255);
+    fill(197, 250, 215);
     rect(70, 350, 300, 160);
 
 
-    fill(0, 0, 0);
+    fill(0, 0, 255);
     textSize(32);
     textFont(hel);
     text("Jazz", 170, 450);
 
-    fill(255, 255, 255);
+
+    fill(197, 250, 215);
     rect(450, 350, 300, 160);
 
-    fill(0, 0, 0);
+    fill(0, 0, 255);
     textSize(32);
-    text("Acoustic", 540, 450);
+    textFont(hel);
+    text("Country", 540, 450);
   }
 
   if (Scene == 3)
   {
-    fill(255, 255, 255);
+    fill(197, 250, 249);
     rect(70, 350, 300, 160);
 
 
-    fill(0, 0, 0);
+    fill(0, 0, 255);
     textSize(32);
     textFont(hel);
-    text("Metallic", 170, 450);
+    text("Metal", 170, 450);
 
-    fill(255, 255, 255);
+    fill(197, 250, 249);
     rect(450, 350, 300, 160);
 
-    fill(0, 0, 0);
+    fill(0, 0, 255);
     textSize(32);
-    text("Electric", 540, 450);
+    text("Blues", 540, 450);
   }
 }

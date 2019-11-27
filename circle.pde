@@ -62,7 +62,7 @@ class Circle
     if (_colour == 1)
     {
       fill(0, 0, 0);
-      text("G", _x, _y);
+      text("G", _x+3, _y+1);
     }
     if (_colour == 2)
     {
