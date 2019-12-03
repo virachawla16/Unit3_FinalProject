@@ -2,7 +2,7 @@ import ddf.minim.*;
 
 Minim minim;
 
-Circle circle[]= new Circle[5];
+Circle circle[]= new Circle[7];
 
 Circle one= new Circle();
 PFont hel;

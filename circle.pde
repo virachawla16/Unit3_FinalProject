@@ -62,22 +62,22 @@ class Circle
     if (_colour == 1)
     {
       fill(0, 0, 0);
-      text("G", _x-10, _y+6);
+      text("G", _x-10, _y+7);
     }
     if (_colour == 2)
     {
       fill(0, 0, 0);
-      text("D", _x-10, _y+6);
+      text("D", _x-8, _y+8);
     }
     if (_colour == 3)
     {
       fill(0, 0, 0);
-      text("C",_x-10, _y+6);
+      text("C",_x-10, _y+7);
     }
     if (_colour == 4)
     { 
       fill(0, 0, 0);
-      text("Em", _x-14, _y+5);
+      text("Em", _x-15, _y+8);
     }
 
     _y += _velocity;
