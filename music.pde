@@ -1,44 +1,52 @@
 class Music
 {
-  
-Minim minim;
-AudioPlayer[] Electric = new AudioPlayer[4];
 
-AudioPlayer[] Acoustic = new AudioPlayer[4];
+  AudioPlayer[] Country = new AudioPlayer[4];
+  AudioPlayer[] Blues = new AudioPlayer[4];
+  AudioPlayer[] Jazz = new AudioPlayer[4];
+  AudioPlayer[] Metal = new AudioPlayer[4];
 
-AudioPlayer[] Jazz = new AudioPlayer[4];
+  Music()
+  {
+    Blues[0]= minim.loadFile("Eminor.mp3");
+    Blues[1]= minim.loadFile("Gmajor.mp3");
+    Blues[2]= minim.loadFile("Dmajor.mp3");
+    Blues[3]= minim.loadFile("Cmajor.mp3");
 
-AudioPlayer[] Metallic = new AudioPlayer[4];
-
-Music()
-{
-  Electric[0]= minim.loadFile("Eminor.mp3");
-  Electric[1]= minim.loadFile("Gmajor.mp3");
-  Electric[2]= minim.loadFile("Dmajor.mp3");
-  Electric[3]= minim.loadFile("Cmajor.mp3");
-  
-  Acoustic[0]= minim.loadFile("     ");
-  Acoustic[1]= minim.loadFile("     ");
-  Acoustic[2]= minim.loadFile("     ");
-  Acoustic[3]= minim.loadFile("     ");
-  
-  
-  Jazz[0]= minim.loadFile("     ");
-  Jazz[1]= minim.loadFile("     ");
-  Jazz[2]= minim.loadFile("     ");
-  Jazz[3]= minim.loadFile("     ");
-  
-  Metallic[0]= minim.loadFile("     ");
-  Metallic[1]= minim.loadFile("     ");
-  Metallic[2]= minim.loadFile("     ");
-  Metallic[3]= minim.loadFile("     ");
-  
-  
-  
-  
-  
-  
-}
+    Country[0]= minim.loadFile("     ");
+    Country[1]= minim.loadFile("     ");
+    Country[2]= minim.loadFile("     ");
+    Country[3]= minim.loadFile("     ");
 
 
+    Jazz[0]= minim.loadFile("     ");
+    Jazz[1]= minim.loadFile("     ");
+    Jazz[2]= minim.loadFile("     ");
+    Jazz[3]= minim.loadFile("     ");
+
+    Metal[0]= minim.loadFile("     ");
+    Metal[1]= minim.loadFile("     ");
+    Metal[2]= minim.loadFile("     ");
+    Metal[3]= minim.loadFile("     ");
+  }
+
+  void PlayNote(int i)
+  {
+    if (Musictype==1)
+    {
+      Blues[i].play();
+    }
+    if (Musictype==2)
+    {
+      Jazz[i].play();
+    }
+    if (Musictype==3)
+    {
+      Metal[i].play();
+    }
+    if (Musictype==4)
+    {
+      Country[i].play();
+    }
+  }
 }

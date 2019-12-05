@@ -2,13 +2,20 @@ import ddf.minim.*;
 
 Minim minim;
 
+Music music;
 Circle circle[]= new Circle[7];
 
 Circle one= new Circle();
+
 PFont hel;
 
 int Scene = 0;
 
+int Musictype=1;
+//1 = blues
+//2 = jazz
+//3 = metal
+//4 = country
 void setup()
 {
   size(800, 800);
@@ -18,6 +25,8 @@ void setup()
   {
     circle[i] = new Circle();
   }
+
+  music= new Music();
 }
 
 void draw()
@@ -26,7 +35,6 @@ void draw()
   if (Scene == 0)
   {
     background(255, 255, 255);
-    // one.draw();
 
     fill(197, 250, 249);
     rect(70, 350, 300, 160);
@@ -62,11 +70,11 @@ void draw()
     fill(234, 196, 255);
     rect(70, 350, 300, 160);
 
-
     fill(0, 0, 255);
     textSize(32);
     textFont(hel);
     text("Jazz", 180, 450);
+
 
 
     fill(234, 196, 255);
@@ -83,11 +91,12 @@ void draw()
     fill(197, 250, 249);
     rect(70, 350, 300, 160);
 
-
     fill(0, 0, 255);
     textSize(32);
     textFont(hel);
     text("Metal", 180, 450);
+
+
 
     fill(197, 250, 249);
     rect(450, 350, 300, 160);
@@ -101,7 +110,7 @@ void draw()
 
 void mouseReleased()
 {
-    if (Scene == 3)
+  if (Scene == 3)
   {
     if (mouseX > 450)
     {
@@ -112,6 +121,7 @@ void mouseReleased()
           if (mouseY < 350 + 160)
           {
             {
+              Musictype = 1; //blues
               Scene = 4;
             }
           }
@@ -129,6 +139,7 @@ void mouseReleased()
         {
           if (mouseY < 350 + 160)
           {
+            Musictype= 3; //metal
             Scene = 4;
           }
         }
@@ -145,6 +156,8 @@ void mouseReleased()
         {
           if (mouseY < 350 + 160)
           {
+
+            Musictype = 2; //jazz
             Scene = 4;
           }
         }
@@ -162,6 +175,7 @@ void mouseReleased()
         {
           if (mouseY < 350 + 160)
           {
+            Musictype = 4; //country
             Scene = 4;
           }
         }
@@ -200,12 +214,28 @@ void mouseReleased()
         }
       }
     }
+    {
+      if (keyCode==LEFT)
+      {
+        music.PlayNote(0);
+      }
+
+      if (keyCode==RIGHT)
+      {
+        music.PlayNote(1);
+      }
+
+      if (keyCode==UP)
+      {
+        music.PlayNote(2);
+      }
+
+      if (keyCode==DOWN)
+      {
+        music.PlayNote(3);
+      }
+    }
+    {
+    }
   }
-
-
-
-  
-
-
-
 }
