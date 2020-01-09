@@ -13,10 +13,10 @@ class Music
     Blues[2]= minim.loadFile("Dmajor.mp3");
     Blues[3]= minim.loadFile("Cmajor.mp3");
 
-    Country[0]= minim.loadFile("     ");
-    Country[1]= minim.loadFile("     ");
-    Country[2]= minim.loadFile("     ");
-    Country[3]= minim.loadFile("     ");
+    Country[0]= minim.loadFile("Country Em.mp3");
+    Country[1]= minim.loadFile("Country G.mp3");
+    Country[2]= minim.loadFile("Country D.mp3");
+    Country[3]= minim.loadFile("Country C.mp3");
 
 
     Jazz[0]= minim.loadFile("     ");
