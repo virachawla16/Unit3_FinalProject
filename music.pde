@@ -24,10 +24,10 @@ class Music
     Jazz[2]= minim.loadFile("     ");
     Jazz[3]= minim.loadFile("     ");
 
-    Metal[0]= minim.loadFile("     ");
-    Metal[1]= minim.loadFile("     ");
-    Metal[2]= minim.loadFile("     ");
-    Metal[3]= minim.loadFile("     ");
+    Metal[0]= minim.loadFile("Metal Em.mp3");
+    Metal[1]= minim.loadFile("Metal G.mp3");
+    Metal[2]= minim.loadFile("Metal D.mp3");
+    Metal[3]= minim.loadFile("Metal C.mp3");
   }
 
   void PlayNote(int i)
