@@ -8,7 +8,7 @@ class Circle
 
   Circle()
   {
-    _velocity = 1;
+    _velocity = 2.32;
     _colour = (int)random(1, 5);
 
     if (_colour == 1)
@@ -72,7 +72,7 @@ class Circle
     if (_colour == 3)
     {
       fill(0, 0, 0);
-      text("C",_x-10, _y+7);
+      text("C", _x-10, _y+7);
     }
     if (_colour == 4)
     { 
@@ -84,6 +84,16 @@ class Circle
 
     if (_y > 700)
     {
+      Circlecount--;
+
+      if (Circlecount < 0)
+      {
+        Scene = 5;
+      }
+
+
+
+
       _y = 0;
       _colour = (int)random(1, 5);
 

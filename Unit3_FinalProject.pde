@@ -3,7 +3,7 @@ import ddf.minim.*;
 Minim minim;
 
 Music music;
-Circle circle[]= new Circle[7];
+Circle circle[]= new Circle[5];
 
 Circle one= new Circle();
 
@@ -11,11 +11,14 @@ PFont hel;
 
 int Scene = 0;
 
-int Musictype=1;
+int Circlecount = 30;
+
+int Musictype = 1;
 //1 = blues
 //2 = jazz
 //3 = metal
 //4 = country
+
 void setup()
 {
   size(800, 800);
@@ -31,7 +34,6 @@ void setup()
 
 void draw()
 {
-
   if (Scene == 0)
   {
     background(255, 255, 255);
@@ -104,6 +106,17 @@ void draw()
     fill(0, 0, 255);
     textSize(32);
     text("Blues", 560, 450);
+  }
+
+  if (Scene == 5)
+  {
+
+    background(175, 253, 255);
+    fill(255,175,195);
+    rect(120, 200, 550, 450);
+    textSize(100);
+    textFont(hel);
+    text("Game Over", 120, 250);
   }
 }
 
