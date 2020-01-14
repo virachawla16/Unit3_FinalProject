@@ -8,10 +8,10 @@ class Music
 
   Music()
   {
-    Blues[0]= minim.loadFile("Eminor.mp3");
-    Blues[1]= minim.loadFile("Gmajor.mp3");
-    Blues[2]= minim.loadFile("Dmajor.mp3");
-    Blues[3]= minim.loadFile("Cmajor.mp3");
+    Blues[0]= minim.loadFile("Blues Em.mp3");
+    Blues[1]= minim.loadFile("Blues G.mp3");
+    Blues[2]= minim.loadFile("Blues D.mp3");
+    Blues[3]= minim.loadFile("Blues C.mp3");
 
     Country[0]= minim.loadFile("Country Em.mp3");
     Country[1]= minim.loadFile("Country G.mp3");
