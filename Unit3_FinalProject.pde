@@ -1,5 +1,7 @@
 import ddf.minim.*;
 
+//My country audio works. The other ones don't because there is a problem with the audio.
+
 Minim minim;
 
 Music music;
@@ -7,29 +9,30 @@ Circle circle[]= new Circle[5];
 
 Circle one= new Circle();
 
+PFont gothicbold;
+
 PFont hel;
 
 int Scene = 0;
 
-int Circlecount = 30;
+int Circlecount = 36;
 
 int Musictype = 1;
-//1 = blues
-//2 = jazz
-//3 = metal
-//4 = country
+ //<>//
 
 void setup()
 {
   size(800, 800);
   minim = new Minim(this);
-  hel = createFont("HelveticaNeue-UltraLight", 32);
+  hel = createFont("HelveticaNeue-UltraLight", 35);
   for (int i=0; i < 5; i++)
   {
     circle[i] = new Circle();
   }
 
   music= new Music();
+
+  gothicbold = createFont("ToppanBunkyuMidashiGothicStdN-ExtraBold", 100);
 }
 
 void draw()
@@ -43,7 +46,7 @@ void draw()
 
 
     fill(0, 0, 0);
-    textSize(32);
+    textSize(35);
     textFont(hel);
     text("Electric", 170, 450);
 
@@ -51,9 +54,10 @@ void draw()
     rect(450, 350, 300, 160);
 
     fill(0, 0, 0);
-    textSize(32);
+    textSize(35);
     text("Acoustic", 540, 450);
   }
+
 
 
   if (Scene == 4)
@@ -73,7 +77,7 @@ void draw()
     rect(70, 350, 300, 160);
 
     fill(0, 0, 255);
-    textSize(32);
+    textSize(35);
     textFont(hel);
     text("Jazz", 180, 450);
 
@@ -83,7 +87,7 @@ void draw()
     rect(450, 350, 300, 160);
 
     fill(0, 0, 255);
-    textSize(32);
+    textSize(35);
     textFont(hel);
     text("Country", 550, 450);
   }
@@ -94,7 +98,7 @@ void draw()
     rect(70, 350, 300, 160);
 
     fill(0, 0, 255);
-    textSize(32);
+    textSize(35);
     textFont(hel);
     text("Metal", 180, 450);
 
@@ -104,19 +108,16 @@ void draw()
     rect(450, 350, 300, 160);
 
     fill(0, 0, 255);
-    textSize(32);
+    textSize(35);
     text("Blues", 560, 450);
   }
 
   if (Scene == 5)
   {
 
-    background(175, 253, 255);
-    fill(255,175,195);
-    rect(120, 200, 550, 450);
-    textSize(100);
-    textFont(hel);
-    text("Game Over", 120, 250);
+    background(255, 111, 98);
+    textFont(gothicbold);
+    text("GAME OVER", 100, 430);
   }
 }
 
@@ -227,28 +228,29 @@ void mouseReleased()
         }
       }
     }
-    {
-      if (keyCode==LEFT)
-      {
-        music.PlayNote(0);
-      }
+  }
+}
 
-      if (keyCode==RIGHT)
-      {
-        music.PlayNote(1);
-      }
+void keyPressed()
+{
 
-      if (keyCode==UP)
-      {
-        music.PlayNote(2);
-      }
+  if (key=='E'||key=='e')
+  {
+    music.PlayNote(0);
+  }
 
-      if (keyCode==DOWN)
-      {
-        music.PlayNote(3);
-      }
-    }
-    {
-    }
+  if (key=='G'||key=='g')
+  {
+    music.PlayNote(1);
+  }
+
+  if (key=='D'||key=='d')
+  {
+    music.PlayNote(2);
+  }
+
+  if (key=='C'||key=='c')
+  {
+    music.PlayNote(3);
   }
 }

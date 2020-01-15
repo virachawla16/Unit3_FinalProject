@@ -8,7 +8,7 @@ class Circle
 
   Circle()
   {
-    _velocity = 2.32;
+    _velocity = 3;
     _colour = (int)random(1, 5);
 
     if (_colour == 1)

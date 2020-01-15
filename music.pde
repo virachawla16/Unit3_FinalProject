@@ -12,7 +12,8 @@ class Music
     Blues[1]= minim.loadFile("Blues G.mp3");
     Blues[2]= minim.loadFile("Blues D.mp3");
     Blues[3]= minim.loadFile("Blues C.mp3");
-
+    
+   
     Country[0]= minim.loadFile("Country Em.mp3");
     Country[1]= minim.loadFile("Country G.mp3");
     Country[2]= minim.loadFile("Country D.mp3");
@@ -28,24 +29,33 @@ class Music
     Metal[1]= minim.loadFile("Metal G.mp3");
     Metal[2]= minim.loadFile("Metal D.mp3");
     Metal[3]= minim.loadFile("Metal C.mp3");
+    
+    //Default[0]= minim.loadFile("Eminor.mp3");
+    //Default[1]= minim.loadFile("Gmajor.mp3");
+    //Default[2]= minim.loadFile("Dmajor.mp3");
+    //Default[3]= minim.loadFile("Cmajor.mp3");
   }
 
   void PlayNote(int i)
   {
     if (Musictype==1)
     {
+      Blues[i].rewind();
       Blues[i].play();
     }
     if (Musictype==2)
     {
+      Jazz[i].rewind();
       Jazz[i].play();
     }
     if (Musictype==3)
     {
-      Metal[i].play();
+      Metal[i].rewind();
+      Metal[i].play(); //<>//
     }
     if (Musictype==4)
     {
+      Country[i].rewind();
       Country[i].play();
     }
   }
