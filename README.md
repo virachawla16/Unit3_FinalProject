@@ -4,7 +4,7 @@
 
 <h3>Description:</h3>
 
-My final project is "Ready, Set, Rock!" It is a control based game. In the game, the player has a guitar which has four sections, each representing a different chord. In the programme, the player gets to choose beween electric and acoustic guitar. After choosing that they get two more options for the style of music. For example, if they choose electric guitar, their choices are metallic and regular. After they choose a genre, circles with the names of chords will fall on the screen and the player has to press the button on the guitar which represents that chord. If they miss three circles, the screen goes red, plays a noise and says "Game Over". If they finish the game succesfully, then the screen shows a picture of a trophy. 
+My final project is "Ready, Set, Rock!" It is a control based game. In the game, the player has a guitar which has four sections, each representing a different chord. In the programme, the player gets to choose beween electric and acoustic guitar. After choosing that they get two more options for the style of music. For example, if they choose electric guitar, their choices are metallic and regular. After they choose a genre, circles with the names of chords will fall on the screen and the player has to press the button on the guitar which represents that chord.  
 
 <h3>Interaction:<h3>
 
